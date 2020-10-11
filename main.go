@@ -3,5 +3,16 @@ package main
 import "fmt"
 
 func main()  {
-	fmt.Println("Hola Mundo!") // eliminar esta línea
+
+	var s []int
+	var aux int
+	fmt.Scan(&aux)
+	var aux2 int
+	var suma int
+	for  i := 0; i < aux; i++ {
+		fmt.Scan(&aux2)
+		s = append(s, aux2)
+		suma += aux2
+	}
+	println(suma)
 }
